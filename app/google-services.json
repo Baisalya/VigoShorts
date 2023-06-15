@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "786160928095",
+    "project_id": "tik-shorts-49d2d",
+    "storage_bucket": "tik-shorts-49d2d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:786160928095:android:d4a4a2bbd80f3b9bca22ea",
+        "android_client_info": {
+          "package_name": "com.example.vigoshorts"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "786160928095-38cd1k79kfnp0ukhc4v1i62ehriep3lg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.vigoshorts",
+            "certificate_hash": "98c8e8240fc57bb3690238b99babc250b2b5163e"
+          }
+        },
+        {
+          "client_id": "786160928095-760a3ug2lcvhon1lmp0suvbjm48k7bcq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAx9qRpJhMAhxDgOuYwcwXmayjgqqQFNwU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "786160928095-760a3ug2lcvhon1lmp0suvbjm48k7bcq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

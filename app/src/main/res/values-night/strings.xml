@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="edit_profile_title">Edit profile</string>
+    <string name="change_profile_picture">Edit picture</string>
+    <string name="profile_picture">Profile Picture</string>
+    <string name="enter_name">Enter your name</string>
+    <string name="enter_username">Username</string>
+    <string name="enter_bio">Bio\n</string>
+    <string name="save">Save\n</string>
+</resources>
