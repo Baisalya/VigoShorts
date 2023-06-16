@@ -14,7 +14,7 @@
 
         <!-- Add following button (left corner) -->
         <ImageButton
-            android:id="@+id/follow_button"
+            android:id="@+id/cancel_button"
             android:layout_width="30sp"
             android:layout_height="30sp"
             android:src="@drawable/ic_close2"
@@ -36,15 +36,15 @@
 
         <!-- Menu bar button (right corner) -->
         <ImageButton
-            android:id="@+id/menu_button"
+            android:id="@+id/done_button"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:src="@drawable/ic_menu"
+            android:src="@drawable/ic_done"
             android:background="@android:color/transparent"
             android:padding="8dp"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
-            app:tint="#0E0E0E" />
+            app:tint="#5E35B1" />
     </RelativeLayout>
 
     <ImageView
@@ -77,7 +77,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Enter your name"
-            app:hintTextColor="#757575">
+            app:startIconDrawable="@drawable/ic_user"
+            app:hintTextColor="#757575"
+            style="@style/OutlinedTextInputLayoutStyle">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/nameEditText"
@@ -92,7 +94,9 @@
             android:hint="Username"
             app:hintTextColor="#757575"
             app:placeholderText="Username"
-            >
+            app:startIconDrawable="@drawable/ic_username"
+
+            style="@style/OutlinedTextInputLayoutStyle">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/usernameEditText"
@@ -105,8 +109,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Bio"
-            app:hintTextColor="#757575">
-
+            app:hintTextColor="#757575"
+            app:startIconDrawable="@drawable/ic_bio"
+            style="@style/OutlinedTextInputLayoutStyle">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/bioEditText"
@@ -118,27 +123,12 @@
         <Spinner
             android:id="@+id/genderSpinner"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50sp"
             android:layout_marginTop="8dp"
             android:padding="4dp"
             android:background="@android:color/transparent"
             android:spinnerMode="dropdown" />
 
     </LinearLayout>
-
-    <Button
-        android:id="@+id/saveButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="16dp"
-        android:text="@string/save"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        android:background="@drawable/rounded_button"
-        android:paddingLeft="24dp"
-        android:paddingRight="24dp"
-        android:paddingTop="8dp"
-        android:paddingBottom="8dp" />
 
 </LinearLayout>
