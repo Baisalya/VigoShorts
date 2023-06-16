@@ -1,69 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <EditText
-        android:id="@+id/searchEditText"
-        android:layout_width="0dp"
+    android:layout_height="match_parent"
+    tools:context=".search.SearchActivity">
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:hint="Search"
-        android:inputType="text"
-        app:layout_constraintEnd_toStartOf="@+id/searchButton"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageButton
-        android:id="@+id/searchButton"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:text="Search"
-        android:src="@drawable/ic_search"
-        android:background="@android:color/transparent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/searchEditText" />
-
-    <Button
-        android:id="@+id/usersButton"
-        android:layout_width="0dp"
+         />
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Users"
-        app:layout_constraintEnd_toStartOf="@+id/hashtagButton"
-        app:layout_constraintHorizontal_chainStyle="spread"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchEditText" />
+        app:tabMode="fixed"
+        app:tabGravity="fill"
+        android:layout_below="@+id/searchView"
+        app:tabIndicatorColor="#5E35B1">
 
-    <Button
-        android:id="@+id/hashtagButton"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Hashtags"
-        app:layout_constraintEnd_toStartOf="@+id/musicButton"
-        app:layout_constraintStart_toEndOf="@+id/usersButton"
-        app:layout_constraintTop_toTopOf="@+id/usersButton" />
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User" />
 
-    <Button
-        android:id="@+id/musicButton"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Music"
-        app:layout_constraintEnd_toStartOf="@+id/videosButton"
-        app:layout_constraintStart_toEndOf="@+id/hashtagButton"
-        app:layout_constraintTop_toTopOf="@+id/usersButton" />
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabHashtag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hashtag" />
 
-    <Button
-        android:id="@+id/videosButton"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Videos"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/musicButton"
-        app:layout_constraintTop_toTopOf="@+id/usersButton" />
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabMusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Music" />
 
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabVideos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Videos" />
 
+    </com.google.android.material.tabs.TabLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tabLayout" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
