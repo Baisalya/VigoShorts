@@ -32,7 +32,7 @@
      app:layout_constraintBottom_toBottomOf="parent"
      app:layout_constraintEnd_toEndOf="parent"
      app:layout_constraintStart_toStartOf="parent"
-     app:layout_constraintTop_toTopOf="@id/imageView9"
+     app:layout_constraintTop_toTopOf="@id/serach_btn"
      app:srcCompat="@drawable/addnewvideo" />
 
  <ImageView
@@ -46,8 +46,8 @@
      app:srcCompat="@drawable/home" />
 
 
- <ImageView
-     android:id="@+id/imageView9"
+ <ImageButton
+     android:id="@+id/serach_btn"
      android:layout_width="40dp"
      android:layout_height="40dp"
      android:layout_marginBottom="10dp"
@@ -57,8 +57,8 @@
      app:layout_constraintTop_toTopOf="@+id/imageView8"
      app:srcCompat="@drawable/discover" />
 
- <ImageView
-     android:id="@+id/imageView10"
+ <ImageButton
+     android:id="@+id/PROFILE_BTN"
      android:layout_width="40dp"
      android:layout_height="40dp"
      android:layout_marginEnd="16dp"

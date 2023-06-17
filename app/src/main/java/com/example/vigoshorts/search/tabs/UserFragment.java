@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.vigoshorts.R;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class UserFragment extends Fragment {
     private RecyclerView recyclerView;

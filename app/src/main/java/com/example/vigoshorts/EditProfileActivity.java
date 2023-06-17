@@ -32,7 +32,7 @@ public class EditProfileActivity extends Activity {
         usernameEditText = findViewById(R.id.usernameEditText);
         bioEditText = findViewById(R.id.bioEditText);
         genderSpinner = findViewById(R.id.genderSpinner);
-        saveButton = findViewById(R.id.saveButton);
+       // saveButton = findViewById(R.id.saveButton);
 
         // Populate the gender spinner
         ArrayAdapter<CharSequence> genderAdapter = ArrayAdapter.createFromResource(

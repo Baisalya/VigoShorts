@@ -3,7 +3,7 @@ package com.example.vigoshorts.search;
 public class SearchAPIManager {
     private static final String SEARCH_API_URL = "https://vivekwebsiteapi.000webhostapp.com/search.php";
 
-    public static void searchUser(String query, ResponseListener<List<User>> listener) {
+/*    public static void searchUser(String query, ResponseListener<List<User>> listener) {
         // Make API request to search for users based on the query
         // Parse the response and convert it into a list of User objects
         // Invoke the listener's onSuccess method with the list of users
@@ -30,6 +30,6 @@ public class SearchAPIManager {
         // Parse the response and convert it into a list of Video objects
         // Invoke the listener's onSuccess method with the list of videos
         // In case of an error, invoke the listener's onError method with the error message
-    }
+    }*/
 }
 

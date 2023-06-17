@@ -55,7 +55,7 @@ public class SearchActivity extends AppCompatActivity {
 
         switch (selectedTabPosition) {
             case 0:
-                SearchAPIManager.searchUser(currentQuery, new ResponseListener<List<User>>() {
+           /*     SearchAPIManager.searchUser(currentQuery, new ResponseListener<List<User>>() {
                     @Override
                     public void onSuccess(List<User> response) {
                         UserFragment userFragment = (UserFragment) pagerAdapter.instantiateItem(viewPager, 0);
@@ -68,10 +68,10 @@ public class SearchActivity extends AppCompatActivity {
                     public void onError(String errorMessage) {
                         // Display an error message to the user
                     }
-                });
+                });*/
                 break;
             case 1:
-                SearchAPIManager.searchHashtag(currentQuery, new ResponseListener<List<Hashtag>>() {
+          /*      SearchAPIManager.searchHashtag(currentQuery, new ResponseListener<List<Hashtag>>() {
                     @Override
                     public void onSuccess(List<Hashtag> response) {
                         // Update the UI with the hashtag search results
@@ -82,10 +82,10 @@ public class SearchActivity extends AppCompatActivity {
                     public void onError(String errorMessage) {
                         // Display an error message to the user
                     }
-                });
+                });*/
                 break;
             case 2:
-                SearchAPIManager.searchMusic(currentQuery, new ResponseListener<List<Music>>() {
+           /*     SearchAPIManager.searchMusic(currentQuery, new ResponseListener<List<Music>>() {
                     @Override
                     public void onSuccess(List<Music> response) {
                         // Update the UI with the music search results
@@ -97,9 +97,9 @@ public class SearchActivity extends AppCompatActivity {
                         // Display an error message to the user
                     }
                 });
-                break;
+                break;*/
             case 3:
-                SearchAPIManager.searchVideos(currentQuery, new ResponseListener<List<Video>>() {
+           /*     SearchAPIManager.searchVideos(currentQuery, new ResponseListener<List<Video>>() {
                     @Override
                     public void onSuccess(List<Video> response) {
                         // Update the UI with the video search results
@@ -110,7 +110,7 @@ public class SearchActivity extends AppCompatActivity {
                     public void onError(String errorMessage) {
                         // Display an error message to the user
                     }
-                });
+                });*/
                 break;
         }
     }

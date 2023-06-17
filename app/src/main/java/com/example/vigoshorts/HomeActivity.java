@@ -17,6 +17,7 @@ import android.os.storage.StorageManager;
 import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
 import com.android.volley.Request;
@@ -26,6 +27,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.bumptech.glide.Glide;
+import com.example.vigoshorts.search.SearchActivity;
 import com.karumi.dexter.Dexter;
 import com.karumi.dexter.MultiplePermissionsReport;
 import com.karumi.dexter.PermissionToken;
@@ -57,6 +59,23 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_home);
+        ImageButton serachbtn=findViewById(R.id.serach_btn);
+        ImageButton PROFILEBTN=findViewById(R.id.PROFILE_BTN);
+        serachbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(HomeActivity.this, SearchActivity.class);
+                startActivity(intent);
+            }
+        });
+        PROFILEBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(HomeActivity.this, MyProfileActivity.class);
+                startActivity(intent);
+
+            }
+        });
         addNewVideo = findViewById(R.id.imageView2);
 
         viewPager2 = findViewById(R.id.viewPager);

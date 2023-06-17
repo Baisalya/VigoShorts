@@ -20,11 +20,11 @@ public class SearchPagerAdapter extends FragmentPagerAdapter {
             case 0:
                 return new UserFragment();
             case 1:
-                return new HashtagFragment();
+               // return new HashtagFragment();
             case 2:
-                return new MusicFragment();
+               // return new MusicFragment();
             case 3:
-                return new VideoFragment();
+               // return new VideoFragment();
             default:
                 return null;
         }
